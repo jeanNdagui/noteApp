@@ -8,12 +8,7 @@ services:
   - type: web
     runtime: node
     name: phonebook-app
-    region: cameroon # Default: oregon
-    plan: free    # Default: starter
-    branch: main      # Default: master
-    buildCommand: npm install
-    startCommand: npm start
-    autoDeploy: false # Disable automatic deploys
+
 
 
 
