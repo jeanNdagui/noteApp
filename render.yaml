@@ -8,7 +8,7 @@ services:
   - type: web
     runtime: node
     name: phonebook-app
-    numInstances: 3   # Manual scaling configuration. Default: 1
+   # numInstances: 3   # Manual scaling configuration. Default: 1
     region: cameroon # Default: oregon
     plan: free    # Default: starter
     branch: main      # Default: master
