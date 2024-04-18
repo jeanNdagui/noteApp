@@ -27,13 +27,4 @@ services:
         generateValue: true # Generate a base64-encoded 256-bit value
       - key: STRIPE_API_KEY
         sync: false # Prompt for a value in the Render Dashboard
-      - key: DATABASE_URL
-        fromDatabase: # Reference a property of a database (see available properties below)
-          name: mydatabase
-          property: connectionString
-      - key: MINIO_PASSWORD
-        fromService: # Reference a value from another service
-          name: minio
-          type: pserv
-          envVarKey: MINIO_ROOT_PASSWORD
-      - fromGroup: my-env-group # Add all variables from an environment group
+
