@@ -1,0 +1,14 @@
+#################################################################
+# Example render.yaml                                           #
+# Do not use this file directly! Consult it for reference only. #
+#################################################################
+# List all services *except* PostgreSQL databases here
+services:
+  # A web service on the Ruby native runtime
+  - type: web
+    runtime: node
+    name: phonebook-app
+    plan: free    # Default: starter
+    branch: main      # Default: master
+    buildCommand: npm install
+    startCommand: npm start
