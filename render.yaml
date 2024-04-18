@@ -17,14 +17,5 @@ services:
     startCommand: npm start
     autoDeploy: false # Disable automatic deploys
     #maxShutdownDelaySeconds: 120 # Increase graceful shutdown period. Default: 30, Max: 300
-    domains: # Custom domains
-      - example.com
-      - www.example.org
-    envVars: # Environment variables
-      - key: API_BASE_URL
-        value: https://api.example.com # Hardcoded value
-      - key: APP_SECRET
-        generateValue: true # Generate a base64-encoded 256-bit value
-      - key: STRIPE_API_KEY
-        sync: false # Prompt for a value in the Render Dashboard
+
 
