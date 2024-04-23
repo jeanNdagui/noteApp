@@ -1,0 +1,7 @@
+PUT http://localhost:3001/api/notes/66253108d7e4313620b12ab5
+content-type: application/json
+
+{
+    "content": "bOB0 au coeur",
+    "important": true
+}
